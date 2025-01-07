@@ -1,19 +1,14 @@
+import './index.css'; // Tailwind CSS 포함
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import App from './App';
-import Home from './pages/Home';
-import About from './pages/About';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<Router>
-			<Routes>
-				<Route path='/' element={<App />}>
-					<Route index element={<Home />} />
-					<Route path='about' element={<About />} />
-				</Route>
-			</Routes>
-		</Router>
-	</React.StrictMode>
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+	<HashRouter>
+		<App />
+	</HashRouter>
 );
