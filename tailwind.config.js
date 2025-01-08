@@ -9,7 +9,7 @@ module.exports = {
 				light: {
 					background: '#e0f2e9', // 라이트 배경색 (연한 초록)
 					text: '#1b5e20', // 라이트 텍스트 색상 (어두운 초록)
-					primary: '#4caf50', // 라이트 프라이머리 색상 (초록)
+					primary: '#388e3c', // 라이트 프라이머리 색상 (초록)
 					secondary: '#a5d6a7', // 라이트 세컨더리 색상 (연한 초록)
 				},
 				// 다크 모드 색상

@@ -22,7 +22,7 @@ const DarkModeToggle = () => {
 		<label className='flex items-center cursor-pointer'>
 			<div className='relative'>
 				<input type='checkbox' className='hidden' checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
-				<div className={`block w-14 h-8 rounded-full ${darkMode ? 'bg-green-900' : 'bg-white'}`}></div>
+				<div className={`block w-14 h-8 rounded-full ${darkMode ? 'bg-green-900' : 'bg-green-200'}`}></div>
 				<div
 					className={`dot absolute left-1 top-1 w-6 h-6 rounded-full transition ${
 						darkMode ? 'transform translate-x-full bg-rose-50' : 'bg-green-900'
