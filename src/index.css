@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+button,
+input {
+	font-family: 'Gowun Dodum', serif;
+	font-weight: 400;
+	font-style: normal;
+}
