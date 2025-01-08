@@ -19,7 +19,12 @@ const Header = forwardRef((_, ref) => {
 					<Config />
 				</div>
 			</div>
-			<span className='text-xs font-semibold p-2'>선택된 주소: {link}</span>
+			<span className='text-xs font-semibold p-2'>
+				선택된 주소:{' '}
+				<a href={link} target='_blank' rel='noopener noreferrer'>
+					{link}
+				</a>
+			</span>
 		</header>
 	);
 });

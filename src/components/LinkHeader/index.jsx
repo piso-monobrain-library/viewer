@@ -28,10 +28,10 @@ export default function LinkHeader() {
 				<LinksSearch />
 			</div>
 			<button className='flex-1 w-full' onClick={handlePrevious}>
-				<i class='bx bxs-chevron-left'></i>
+				<i className='bx bxs-chevron-left'></i>
 			</button>
 			<button className='flex-1 w-full' onClick={handleNext}>
-				<i class='bx bxs-chevron-right'></i>
+				<i className='bx bxs-chevron-right'></i>
 			</button>
 			<LinksModal />
 		</div>

@@ -4,10 +4,7 @@ import { TabContext } from '../../context/TabContext';
 function HostSelector() {
 	const { folder, folders, setLink, host } = useContext(TabContext);
 
-	console.log(folders);
-
 	const handleFolderChange = (e) => {
-		console.log(e.target.value);
 		setLink(host + e.target.value + '.html');
 	};
 
