@@ -20,8 +20,8 @@ const Modal = ({ isOpen, onClose, children }) => {
 	if (!isOpen) return null;
 
 	return (
-		<div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center'>
-			<div className='bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text p-4 rounded shadow-lg'>
+		<div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50'>
+			<div className='bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text p-4 rounded shadow-lg max-w-[80%] w-auto max-h-[80%] overflow-auto'>
 				{React.cloneElement(children, { onClose })}
 			</div>
 		</div>

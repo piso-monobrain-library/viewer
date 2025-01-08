@@ -40,6 +40,7 @@ const Config = () => {
 					<div className='flex mb-4 border-b border-light-primary dark:border-dark-primary'>
 						{Tabs.map(({ name, caption }) => (
 							<button
+								key={name}
 								onClick={() => handleTabChange(name)}
 								className={`px-4 py-2 text-lg font-semibold transition-colors duration-300 ${
 									activeTab === name
